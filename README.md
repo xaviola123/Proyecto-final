@@ -1,112 +1,125 @@
-# Agencia Viajes
-Este repositorio contiene una agencia de viajes.Integras 3 entidades `Vuelo`,`Hotel` y `Reserva`. Estas interactuan entre si y utilizan una base de datos SQL y funcionalidades API REST
-# Características Principales
-->Conexion a base de datos
-->Metodos CRUD de `Vuelos`,`Hotel` y `Reserva`
-->Contiene endpoints para interactuar con las entidades
-# Entidades
-1. **Vuelo**: Representa a un Vuelo
-2. **Hotel**: Representa a un Hotel
-3. **Reserva** Represnta Reservas que intereactuan con vuelos y hoteles
+# Agencia de Viajes
 
-# SERVICIO
-**Servicio Vuelo**
-  A partir de una tabla vuelos en la base de datos agencia, se crean recursos
-  
-**Servicio Hotel**
-A partir de una tabla hoteles en la base de datos agencia, se crean recursos
+Este repositorio contiene una agencia de viajes que integra tres entidades principales: `Vuelo`, `Hotel` y `Reserva`. Estas entidades interactúan entre sí y utilizan una base de datos SQL y funcionalidades API REST.
 
-**Servicio Reserva**
-A partir de una tabla reservas en la base de datos agencia, se crean recursos
+## Características Principales
+- Conexión a base de datos
+- Métodos CRUD para `Vuelo`, `Hotel` y `Reserva`
+- Endpoints para interactuar con las entidades
 
+## Entidades
+1. **Vuelo**: Representa un vuelo.
+2. **Hotel**: Representa un hotel.
+3. **Reserva**: Representa reservas que interactúan con vuelos y hoteles.
 
-# Funcionalidades de Hotel
-- **MetodosCRUD**
-        - contiene los metodos create,read,update,delete,(crea un hotel nuevo,obtiene la lista de hoteles,actualiza un hotel por un JSON en el body,eliminar un hotel)
- - **OtrosMetodos**
-       - Obtiene un hotel por nombre
-   
-# Clientes endpoint
+## Servicios
 
-1. **Listar todos los Hoteles**
-    - **URL**: `/hoteles`
-    - **Método**: `GET`
+### Servicio Vuelo
+A partir de la tabla `vuelos` en la base de datos `agencia`, se crean recursos.
 
-2. **listar hoteles por nombre**
-    - **URL**: `/hoteles/{nombre}`
-    - **Método**: `GET`
+### Servicio Hotel
+A partir de la tabla `hoteles` en la base de datos `agencia`, se crean recursos.
 
-3. **Agrega un hotel**
-    - **URL**: `/hoteles`
-    - **Método**: `POST`
+### Servicio Reserva
+A partir de la tabla `reservas` en la base de datos `agencia`, se crean recursos.
 
-4. **borra  un hotel por ID**
-    - **URL**: `/hoteles/{idHotel}`
-    - **Método**: `DELETE`
+## Funcionalidades de Hotel
 
-5. **Actualiza un hotel**
-    - **URL**: `/hoteles`
-    - **Método**: `PUT`
+### Métodos CRUD
+- **Create**: Crea un nuevo hotel.
+- **Read**: Obtiene la lista de hoteles.
+- **Update**: Actualiza un hotel a partir de un JSON en el body.
+- **Delete**: Elimina un hotel.
 
+### Otros Métodos
+- Obtiene un hotel por nombre.
 
-# Funcionalidades de Vuelo
-- **MetodosCRUD**
-    -  contiene los metodos create,read,update,delete,(crea un hotel nuevo,obtiene la lista de hoteles,actualiza un hotel por un JSON en el body,eliminar un hotel)
-- **OTROS METODOS**
-    - Busca vuelos disponibles según el número de plazas a reservar
-   
+### Endpoints
+1. **Listar todos los hoteles**
+   - **URL**: `/hoteles`
+   - **Método**: `GET`
 
-# Vuelos endpoint
+2. **Listar hoteles por nombre**
+   - **URL**: `/hoteles/{nombre}`
+   - **Método**: `GET`
 
+3. **Agregar un hotel**
+   - **URL**: `/hoteles`
+   - **Método**: `POST`
+
+4. **Borrar un hotel por ID**
+   - **URL**: `/hoteles/{idHotel}`
+   - **Método**: `DELETE`
+
+5. **Actualizar un hotel**
+   - **URL**: `/hoteles`
+   - **Método**: `PUT`
+
+## Funcionalidades de Vuelo
+
+### Métodos CRUD
+- **Create**: Crea un nuevo vuelo.
+- **Read**: Obtiene la lista de vuelos.
+- **Update**: Actualiza un vuelo a partir de un JSON en el body.
+- **Delete**: Elimina un vuelo.
+
+### Otros Métodos
+- Busca vuelos disponibles según el número de plazas a reservar.
+
+### Endpoints
 1. **Listar todos los vuelos**
-     - **URL**: `/vuelos`
-     - **Método**: `GET`
+   - **URL**: `/vuelos`
+   - **Método**: `GET`
 
-2.  **Busca vuelos disponibles por num plazas**
-     - **URL**: `/vuelos/{totalPlazasReservar}`
-     - **Método**: `GET`
+2. **Buscar vuelos disponibles por número de plazas**
+   - **URL**: `/vuelos/{totalPlazasReservar}`
+   - **Método**: `GET`
 
-3. **Agrega un vuelo**
-     - **URL**: `/vuelos`
-     - **Método**: `POST`
+3. **Agregar un vuelo**
+   - **URL**: `/vuelos`
+   - **Método**: `POST`
 
-4. **Actualiza las plazas de un Vuelo**
-     - **URL**: `/vuelos/{idVuelo}/{plazasReservadas}`
-     - **Método**: `PUT`
+4. **Actualizar las plazas de un vuelo**
+   - **URL**: `/vuelos/{idVuelo}/{plazasReservadas}`
+   - **Método**: `PUT`
 
-5. **Elimina un Vuelo por ID**
-     - **URL**: `/vuelos/{Idvuelo}`
-     - **Método**: `DELETE`
+5. **Eliminar un vuelo por ID**
+   - **URL**: `/vuelos/{idVuelo}`
+   - **Método**: `DELETE`
 
- 
-# Funcionalidades de Reserva
-1. **MetodosCRUD**
-     -contiene los metodos create,read,update,delete,(crea un hotel nuevo,obtiene la lista de hoteles,actualiza un hotel por un JSON en el body,eliminar un hotel)
-3. **OTROS METODOS**
-     - obtienes la lista de todas las reservas por nombre hotel
-     - actualiza las plazas del vuelo segun la reserva pasada por body
+## Funcionalidades de Reserva
 
-   # Reservas endpoint
-1. **Agrega una reserva**
-    - **URL**: `/reservas`
-    - **Método**: `POST`
+### Métodos CRUD
+- **Create**: Crea una nueva reserva.
+- **Read**: Obtiene la lista de reservas.
+- **Update**: Actualiza una reserva a partir de un JSON en el body.
+- **Delete**: Elimina una reserva.
 
-2. **Obtienes la lista de todas las reservas**
-    - **URL**: `/reservas`
-    - **Método**: `GET`
+### Otros Métodos
+- Obtiene la lista de todas las reservas por nombre de hotel.
+- Actualiza las plazas del vuelo según la reserva pasada por body.
 
-3. **Obtiene reservas por nombre HOTEL**
+### Endpoints
+1. **Agregar una reserva**
+   - **URL**: `/reservas`
+   - **Método**: `POST`
+
+2. **Obtener la lista de todas las reservas**
+   - **URL**: `/reservas`
+   - **Método**: `GET`
+
+3. **Obtener reservas por nombre de hotel**
    - **URL**: `/reservas/{nombreHotel}`
    - **Método**: `GET`
 
-4. **Obtiene una reserva por Id de reserva**
-    - **URL**: `/reservas/{id}`
-    - **Método**: `GET`
-    
-5. **Elimina una Reserva por ID**
-    - **URL**: `/reservas/{id}`
-    - **Método**: `DELETE`
+4. **Obtener una reserva por ID de reserva**
+   - **URL**: `/reservas/{id}`
+   - **Método**: `GET`
 
-6. **Actualiza el num Plazas vuelo a partir de una Reserva**
-    - **URL**: `/reservas`
-    - **Método**: `PUT`
+5. **Eliminar una reserva por ID**
+   - **URL**: `/reservas/{id}`
+   - **Método**: `DELETE`
+
+6. **Actualizar el número de plazas de vuelo a partir de una reserva**
+   - **URL**: `/reservas`
+   - **Método**: `PUT`
