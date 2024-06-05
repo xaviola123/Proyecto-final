@@ -50,39 +50,41 @@ A partir de una tabla reservas en la base de datos agencia, se crean recursos
 
 
 # Funcionalidades de Vuelo
-- **MetodosCRUD** contiene los metodos create,read,update,delete,(crea un hotel nuevo,obtiene la lista de hoteles,actualiza un hotel por un JSON en el body,eliminar un hotel)
+- **MetodosCRUD**
+    -  contiene los metodos create,read,update,delete,(crea un hotel nuevo,obtiene la lista de hoteles,actualiza un hotel por un JSON en el body,eliminar un hotel)
 - **OTROS METODOS**
-   - Busca vuelos disponibles según el número de plazas a reservar
+    - Busca vuelos disponibles según el número de plazas a reservar
    
 
 # Vuelos endpoint
 
 1. **Listar todos los vuelos**
- - **URL**: `/vuelos`
- - **Método**: `GET`
+   - **URL**: `/vuelos`
+   - **Método**: `GET`
 
 2.  **Busca vuelos disponibles por num plazas**
- - **URL**: `/vuelos/{totalPlazasReservar}`
- - **Método**: `GET`
+   - **URL**: `/vuelos/{totalPlazasReservar}`
+   - **Método**: `GET`
 
 3. **Agrega un vuelo**
- - **URL**: `/vuelos`
- - **Método**: `POST`
+   - **URL**: `/vuelos`
+   - **Método**: `POST`
 
 4. **Actualiza las plazas de un Vuelo**
- - **URL**: `/vuelos/{idVuelo}/{plazasReservadas}`
- - **Método**: `PUT`
+   - **URL**: `/vuelos/{idVuelo}/{plazasReservadas}`
+   - **Método**: `PUT`
 
 5. **Elimina un Vuelo por ID**
- - **URL**: `/vuelos/{Idvuelo}`
- - **Método**: `DELETE`
+   - **URL**: `/vuelos/{Idvuelo}`
+   - **Método**: `DELETE`
 
  
 # Funcionalidades de Reserva
-1. **MetodosCRUD** contiene los metodos create,read,update,delete,(crea un hotel nuevo,obtiene la lista de hoteles,actualiza un hotel por un JSON en el body,eliminar un hotel)
-2. **OTROS METODOS**
-   - obtienes la lista de todas las reservas por nombre hotel
-   - actualiza las plazas del vuelo segun la reserva pasada por body
+1. **MetodosCRUD**
+     -contiene los metodos create,read,update,delete,(crea un hotel nuevo,obtiene la lista de hoteles,actualiza un hotel por un JSON en el body,eliminar un hotel)
+3. **OTROS METODOS**
+     - obtienes la lista de todas las reservas por nombre hotel
+     - actualiza las plazas del vuelo segun la reserva pasada por body
 
    # Reservas endpoint
 1. **Agrega una reserva**
