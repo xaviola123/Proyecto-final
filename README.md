@@ -124,7 +124,7 @@ A partir de la tabla `reservas` en la base de datos `agencia`, se crean recursos
    - **URL**: `/reservas`
    - **Método**: `PUT`
 
-## Documentación Swagger
+# Documentación Swagger
 
 - [Hotel](http://localhost:8080/swagger-ui/index.html)
 - [Vuelos](http://localhost:8081/swagger-ui/index.html)
