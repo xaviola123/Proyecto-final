@@ -1,6 +1,6 @@
 # Agencia Viajes
 Este repositorio contiene una agencia de viajes.Integras 3 entidades `Vuelo`,`Hotel` y `Reserva`. Estas interactuan entre si y utilizan una base de datos SQL y funcionalidades API REST
-## Características Principales
+# Características Principales
 ->Conexion a base de datos
 ->Metodos CRUD de `Vuelos`,`Hotel` y `Reserva`
 ->Contiene endpoints para interactuar con las entidades
@@ -21,40 +21,41 @@ A partir de una tabla reservas en la base de datos agencia, se crean recursos
 
 
 # Funcionalidades de Hotel
-1. **MetodosCRUD** contiene los metodos create,read,update,delete,(crea un hotel nuevo,obtiene la lista de hoteles,actualiza un hotel por un JSON en el body,eliminar un hotel)
+1. **MetodosCRUD**
+  - contiene los metodos create,read,update,delete,(crea un hotel nuevo,obtiene la lista de hoteles,actualiza un hotel por un JSON en el body,eliminar un hotel)
 2. **OtrosMetodos**
-  2.1      Obtiene un hotel por nombre
+   - Obtiene un hotel por nombre
    
-### Clientes endpoint
+# Clientes endpoint
 
 1. **Listar todos los Hoteles**
-    **URL**: `/hoteles`
-    **Método**: `GET`
+    - **URL**: `/hoteles`
+    - **Método**: `GET`
 
 2. **listar hoteles por nombre**
-    **URL**: `/hoteles/{nombre}`
-    **Método**: `GET`
+    - **URL**: `/hoteles/{nombre}`
+    - **Método**: `GET`
 
 3. **Agrega un hotel**
-    **URL**: `/hoteles`
-    **Método**: `POST`
+    - **URL**: `/hoteles`
+    - **Método**: `POST`
 
 4. **borra  un hotel por ID**
-    **URL**: `/hoteles/{idHotel}`
-    **Método**: `DELETE`
+    - **URL**: `/hoteles/{idHotel}`
+    - **Método**: `DELETE`
 
 5. **Actualiza un hotel**
-    **URL**: `/hoteles`
-    **Método**: `PUT`
+    - **URL**: `/hoteles`
+    - **Método**: `PUT`
 
 
-### Funcionalidades de Vuelo
+# Funcionalidades de Vuelo
 - **MetodosCRUD** contiene los metodos create,read,update,delete,(crea un hotel nuevo,obtiene la lista de hoteles,actualiza un hotel por un JSON en el body,eliminar un hotel)
 - **OTROS METODOS**
    - Busca vuelos disponibles según el número de plazas a reservar
    
 
-## Vuelos endpoint
+# Vuelos endpoint
 
 1. **Listar todos los vuelos**
  - **URL**: `/vuelos`
@@ -77,13 +78,13 @@ A partir de una tabla reservas en la base de datos agencia, se crean recursos
  - **Método**: `DELETE`
 
  
-### Funcionalidades de Reserva
+# Funcionalidades de Reserva
 1. **MetodosCRUD** contiene los metodos create,read,update,delete,(crea un hotel nuevo,obtiene la lista de hoteles,actualiza un hotel por un JSON en el body,eliminar un hotel)
 2. **OTROS METODOS**
    - obtienes la lista de todas las reservas por nombre hotel
    - actualiza las plazas del vuelo segun la reserva pasada por body
 
-   ## Reservas endpoint
+   # Reservas endpoint
 1. **Agrega una reserva**
     - **URL**: `/reservas`
     - **Método**: `POST`
