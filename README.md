@@ -8,16 +8,20 @@ Este repositorio contiene una agencia de viajes.Integras 3 entidades `Vuelo`,`Ho
 1. **Vuelo**: Representa a un Vuelo
 2. **Hotel**: Representa a un Hotel
 3. **Reserva** Represnta Reservas que intereactuan con vuelos y hoteles
+
+## SERVICIO
 # Servicio Vuelo
   A partir de una tabla vuelos en la base de datos agencia, se crean recursos
 # Servicio Hotel
 A partir de una tabla hoteles en la base de datos agencia, se crean recursos
 # Servicio Reserva
 A partir de una tabla reservas en la base de datos agencia, se crean recursos
+## FUNCIONALIDADES
 # Funcionalidades de Hotel
 1. **MetodosCRUD** contiene los metodos create,read,update,delete,(crea un hotel nuevo,obtiene la lista de hoteles,actualiza un hotel por un JSON en el body,eliminar un hotel)
 2. **OtrosMetodos**
   2.1      Obtiene un hotel por nombre
+   
 ### Clientes endpoint
 
 1. **Listar todos los Hoteles**
