@@ -1,0 +1,11 @@
+1- creamos la BD Hoteles y el archivo SQL para los datos de la BD.
+2-Creamos la estructura de com.curso.model
+	2-1 nos creamos el model Class Hotel. anotaciones Entity y id autoincremtal
+3-Creamos El service.
+4-Nos creamos el dao para poder interacionar con la BD	
+5-Creamoe el serviceImpl anotaciones @Service y desarollamos la logica dentro de esta clase. Implementamos la interfaz SERVICE
+6-nos creamos el controller.con la anotacion de @RestController
+7-en la clase aplication ponemos las anotacion de
+	@EntityScan(basePackages = "com.curso.model")
+	@EnableJpaRepositories(basePackages = "com.curso.dao")
+	@SpringBootApplicatio(scanBasePackages = {"com.curso.controller","com.curso.service"})
