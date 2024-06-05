@@ -123,3 +123,6 @@ A partir de la tabla `reservas` en la base de datos `agencia`, se crean recursos
 6. **Actualizar el número de plazas de vuelo a partir de una reserva**
    - **URL**: `/reservas`
    - **Método**: `PUT`
+###  Hotel http://localhost:8080/swagger-ui/index.html
+### Vuelos http://localhost:8081/swagger-ui/index.html
+### Reserva http://localhost:8082/swagger-ui/index.html
